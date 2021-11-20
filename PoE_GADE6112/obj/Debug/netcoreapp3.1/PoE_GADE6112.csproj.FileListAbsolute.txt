@@ -1,0 +1,64 @@
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.AssemblyReference.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.Form1.resources
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.GenerateResource.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfoInputs.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfo.cs
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.CoreCompileInputs.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.AssemblyReference.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.Form1.resources
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.GenerateResource.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfoInputs.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfo.cs
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.CoreCompileInputs.cache
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.exe
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.deps.json
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.json
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.dev.json
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\OneDrive\Documents\A_VEGA_CT\A_GAME DEV\GADE6112 PoE 2nd Semester\GADE6112_PoE\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.genruntimeconfig.cache
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.AssemblyReference.cache
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.Form1.resources
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.GenerateResource.cache
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfoInputs.cache
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfo.cs
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.CoreCompileInputs.cache
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\Downloads\GADE6112_20109773_Task_1_2021 (1)\Task 1\portfolioofevidence\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.Form1.resources
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.GenerateResource.cache
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfoInputs.cache
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfo.cs
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.CoreCompileInputs.cache
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.exe
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.deps.json
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.json
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.dev.json
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\Source\Repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.genruntimeconfig.cache
+C:\Users\lukej\source\repos\VegaStudent22\task2Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.AssemblyReference.cache
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.exe
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.deps.json
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.json
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.runtimeconfig.dev.json
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\bin\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.AssemblyReference.cache
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.Form1.resources
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.GenerateResource.cache
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfoInputs.cache
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.AssemblyInfo.cs
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.csproj.CoreCompileInputs.cache
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.dll
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.pdb
+C:\Users\lukej\source\repos\VegaStudent22\task3Repo\PoE_GADE6112\obj\Debug\netcoreapp3.1\PoE_GADE6112.genruntimeconfig.cache
