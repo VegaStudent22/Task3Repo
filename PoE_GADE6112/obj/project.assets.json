@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukej\\source\\repos\\VegaStudent22\\task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
+      "projectUniqueName": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
       "projectName": "PoE_GADE6112",
-      "projectPath": "C:\\Users\\lukej\\source\\repos\\VegaStudent22\\task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
+      "projectPath": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
       "packagesPath": "C:\\Users\\lukej\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukej\\source\\repos\\VegaStudent22\\task3Repo\\PoE_GADE6112\\obj\\",
+      "outputPath": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lukej\\AppData\\Roaming\\NuGet\\NuGet.Config",

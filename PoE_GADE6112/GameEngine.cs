@@ -137,11 +137,9 @@ namespace PoE_GADE6112
         public void MoveEnemies(Character c) 
         {
             for (int i = 0; i < Map.EnemyArr.Length; i++)
-            {
-                
+            {   
                 Map.EnemyArr[i].Attack(c);
                 Map.UpdateVision();
-
             }
         }
         

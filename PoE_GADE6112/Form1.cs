@@ -56,7 +56,6 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.Hero.Move(move);
                 gameEngine.Map.UpdateVision();
-
                 UpdateForm();
             }
         }
@@ -70,7 +69,6 @@ namespace PoE_GADE6112
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
             }
-            
         }       
         
 

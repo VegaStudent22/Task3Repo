@@ -1,5 +1,7 @@
 ﻿using System;
+
 using System.Collections.Generic;
+
 using System.Text;
 
 namespace PoE_GADE6112
@@ -7,18 +9,25 @@ namespace PoE_GADE6112
     public abstract class Character : Tile
     {
         protected int hp;
+        
         public int HP { get { return this.hp; } set { hp = value; } }
+       
         protected int maxHP { get; set; }
+       
         public int MaxHP { get { return this.maxHP; } set { maxHP = value; } }
+       
         protected int damage { get; set; }
+       
         public int Damage { get { return this.damage; } set { damage = value; } }
+       
         private int goldPurse;
+       
         public int GoldPurse { get { return this.goldPurse; } set { goldPurse = value; } }
 
-
         public Tile[] VisionArr { get; set; } = new Tile[4]; //index 0 up, 1 right, 2 down, 3 left; used to check valid movement
+       
         public enum Movement
-        {
+        {  
             NOMOVEMENT, UP, DOWN, LEFT, RIGHT
         }
 
@@ -36,33 +45,20 @@ namespace PoE_GADE6112
 
         public bool IsDead()
         {
-            bool dead;
-
             if (HP == 0)
             {
-                dead = true;
-            }
-            else
-            {
-                dead = false;
-            }
-            return dead;
+                return true;
+            }  
+            return false;
         }
 
         public virtual bool CheckRange(Character target)
         {            
-            bool characterRange = true;
-
             if (DistanceTo(target) == 1)
             {
-                characterRange = true;
+                return true;
             }
-            else
-            {
-                characterRange = true;
-            }
-
-            return characterRange;
+        return false;
         }
 
         private int DistanceTo(Character target)
@@ -77,30 +73,28 @@ namespace PoE_GADE6112
                 Y = Y + 1;
             }
             else if (move == Movement.DOWN)
-            {
+            {   
                 Y = Y - 1;
             }
             else if (move == Movement.LEFT)
-            {
+            {   
                 X = X - 1;
             }
             else if (move == Movement.RIGHT)
-            {
+            {   
                 X = X + 1;
-            }
-            else if(move == Movement.NOMOVEMENT)
-            {
-                // X and Y remains as they are
             }
         }
 
         public abstract Movement ReturnMove(Movement move = Movement.NOMOVEMENT);
+        
         public abstract override String ToString();
+        
         public void Pickup(Item i)
         {
             if (i.tileType == TileType.GOLD)
             {
-                //goldPurse += i.GoldAmount;
+                //goldPurse += i.GoldAmount
             }
         }
     }
