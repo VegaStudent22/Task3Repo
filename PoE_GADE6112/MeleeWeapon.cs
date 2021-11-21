@@ -23,8 +23,7 @@ namespace PoE_GADE6112
             return 1;
         }
 
-        if(meleeWeaponTypes == MeleeWeaponTypes.DAGGER)
-
+        if (MeleeWeaponTypes meleeWeaponTypes == MeleeWeaponTypes.DAGGER)
 
     }
 }
