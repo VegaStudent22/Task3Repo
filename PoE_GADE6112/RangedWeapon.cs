@@ -13,9 +13,9 @@ namespace PoE_GADE6112
 
         public RangedWeaponTypes rangedWeaponTypes { get; set; }
 
-        public override Range()
+        public override int Range()
         {
-            return Range;
+            return base.Range;
         }
 
         public RangedWeapon(RangedWeaponTypes rangedTypes, int x, int y, TileT tileType) : base(x, y)
