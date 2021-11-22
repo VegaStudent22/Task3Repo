@@ -11,7 +11,7 @@ namespace PoE_GADE6112
             RIFLE, LONGBOW
         }
 
-        public RangedWeaponTypes rangedWeaponTypes { get; set; };
+        public RangedWeaponTypes rangedWeaponTypes { get; set; }
 
         public override Range()
         {
