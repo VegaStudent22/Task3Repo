@@ -13,7 +13,7 @@ namespace PoE_GADE6112
 
         public MeleeWeaponTypes meleeWeaponTypes { get; set; }
 
-        public MeleeWeapon(MeleeWeaponTypes meleeTypes, int x, int y, TileType tileType) : base(x, y)
+        public MeleeWeapon(MeleeWeaponTypes meleeTypes, int x, int y, TileType tileTypeMelee) : base(x, y)
         {
             meleeWeaponTypes = meleeTypes;
         }

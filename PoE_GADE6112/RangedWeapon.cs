@@ -18,7 +18,7 @@ namespace PoE_GADE6112
             return base.Range;
         }
 
-        public RangedWeapon(RangedWeaponTypes rangedTypes, int x, int y, TileT tileType) : base(x, y)
+        public RangedWeapon(RangedWeaponTypes rangedTypes, int x, int y, TileType tileTypeRanged)
         {
             rangedWeaponTypes = rangedTypes;
         }

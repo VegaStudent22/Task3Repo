@@ -7,5 +7,13 @@ namespace PoE_GADE6112
     abstract class Leader : Enemy
     {
         private Leader Tile { get; set; }
+
+        public Leader(Leader enemyLeader, int x, int y, TileType tileTypeEnemy)
+        {
+            int leaderHP = 5;
+            int leaderDamage = 2;
+        }
+
+        public override 
     }
 }
