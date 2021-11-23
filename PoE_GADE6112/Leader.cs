@@ -14,6 +14,9 @@ namespace PoE_GADE6112
             int leaderDamage = 2;
         }
 
-        public override 
+        public override Movement ReturnMove(Movement move = Movement.NOMOVEMENT)
+        {
+
+        }
     }
 }
