@@ -6,6 +6,6 @@ namespace PoE_GADE6112
 {
     class Shop
     {
-        string
+        public Weapon[,,] weaponArr { get { return this.weaponArr; } set { weaponArr = value; } }
     }
 }
