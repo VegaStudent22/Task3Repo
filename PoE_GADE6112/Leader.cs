@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    abstract class Leader : Enemy
+  [Serializable]
+  abstract class Leader : Enemy
     {
         private Leader Tile { get; set; }
 

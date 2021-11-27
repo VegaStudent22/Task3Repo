@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public class Hero : Character
+  [Serializable]
+  public class Hero : Character
     {
         public int heroXPosition;
         public int heroYPosition;

@@ -33,8 +33,9 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
-                UpdateForm();
+                UpdateForm();//re-draw form
             }
         }
 
@@ -44,6 +45,7 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
             }
@@ -55,6 +57,7 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
             }
@@ -66,6 +69,7 @@ namespace PoE_GADE6112
             if(move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
             }

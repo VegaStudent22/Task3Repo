@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public class Goblin : Enemy
+  [Serializable]
+  public class Goblin : Enemy
     {
         public Goblin(int x, int y) : base(x, y, 0, 10,1, TileType.ENEMY)
         {

@@ -5,6 +5,7 @@ using static PoE_GADE6112.Tile;
 
 namespace PoE_GADE6112
 {
+    [Serializable]
     public class Map
     {
         private Tile[,] tile;
@@ -54,9 +55,10 @@ namespace PoE_GADE6112
 
         public void UpdateTile(Tile tile)//own method to help update Tile
         {
-            //int previousX = tile.X;
-            //int previousY = tile.Y;
+            int previousX = tile.X;
+            int previousY = tile.Y;
             //var previousTile = Tile[tile.X, tile.Y];
+            Tile[previousX, previousY] = null;
             Tile[tile.X, tile.Y] = tile;
         }
 
@@ -72,7 +74,7 @@ namespace PoE_GADE6112
                     return hero;
                 case TileType.ENEMY:
                     //Integration Question 3 Task 2
-                    if(Random.Next(0,1) == 0)
+                    if(Random.Next(0,2) == 0)
                     {
                         Goblin goblin = new Goblin(x, y);
                         return goblin;

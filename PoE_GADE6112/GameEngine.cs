@@ -8,7 +8,8 @@ using static PoE_GADE6112.Tile;
 
 namespace PoE_GADE6112
 {
-    public class GameEngine
+  [Serializable]
+  public class GameEngine
     {
         static string fileName;
         private Map map;

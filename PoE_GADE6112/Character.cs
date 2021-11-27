@@ -6,7 +6,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public abstract class Character : Tile
+  [Serializable]
+  public abstract class Character : Tile
     {
         protected int hp;
         
@@ -54,11 +55,11 @@ namespace PoE_GADE6112
 
         public virtual bool CheckRange(Character target)
         {            
-            if (DistanceTo(target) == 1)
+            if (DistanceTo(target) == 2) //Question 2.3 fix
             {
                 return true;
             }
-        return false;
+            return false;
         }
 
         private int DistanceTo(Character target)
