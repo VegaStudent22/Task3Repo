@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public class MeleeWeapon : Weapon
+  [Serializable]
+  public class MeleeWeapon : Weapon
     {
         public enum MeleeWeaponTypes
         {

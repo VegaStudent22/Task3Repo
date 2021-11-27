@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public class Weapon : Item
+  [Serializable]
+  public class Weapon : Item
     {
         private int damage;
         protected int Damage {get { return this.damage; } set { damage = value; } } //protected accessor for the Damage value

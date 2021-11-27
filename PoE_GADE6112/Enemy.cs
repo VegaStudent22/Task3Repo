@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public abstract class Enemy : Character
+  [Serializable]
+  public abstract class Enemy : Character
     {
         protected Random randomNumber = new Random();
 

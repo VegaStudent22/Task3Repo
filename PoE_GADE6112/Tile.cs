@@ -6,6 +6,7 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
+    [Serializable]
     public abstract class Tile
     {
         protected int x;

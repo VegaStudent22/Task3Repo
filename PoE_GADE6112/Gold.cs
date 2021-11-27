@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    public class Gold : Item
+  [Serializable]
+  public class Gold : Item
     {
         private int goldAmount;
         public int GoldAmount { get { return this.goldAmount; } set { goldAmount = value; } }
@@ -12,7 +13,7 @@ namespace PoE_GADE6112
 
         public Gold(int x, int y): base(x,y)
         {
-            GoldAmount = Random.Next(1,5);
+            GoldAmount = Random.Next(1,6);
         }
 
         public Random Random { get { return this.random; } set { random = value; } }

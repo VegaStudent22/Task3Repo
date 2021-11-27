@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PoE_GADE6112
 {
-    class RangedWeapon
+  [Serializable]
+  class RangedWeapon
     {
         public enum RangedWeaponTypes
         {
