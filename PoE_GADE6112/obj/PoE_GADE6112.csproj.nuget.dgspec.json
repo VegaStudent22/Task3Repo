@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseph.bondjobo\\Documents\\Luke\\PoE_GADE6112\\PoE_GADE6112.csproj": {}
+    "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseph.bondjobo\\Documents\\Luke\\PoE_GADE6112\\PoE_GADE6112.csproj": {
+    "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseph.bondjobo\\Documents\\Luke\\PoE_GADE6112\\PoE_GADE6112.csproj",
+        "projectUniqueName": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
         "projectName": "PoE_GADE6112",
-        "projectPath": "C:\\Users\\joseph.bondjobo\\Documents\\Luke\\PoE_GADE6112\\PoE_GADE6112.csproj",
-        "packagesPath": "C:\\Users\\joseph.bondjobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseph.bondjobo\\Documents\\Luke\\PoE_GADE6112\\obj\\",
+        "projectPath": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\PoE_GADE6112.csproj",
+        "packagesPath": "C:\\Users\\lukej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukej\\source\\repos\\Task3Repo\\PoE_GADE6112\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\joseph.bondjobo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lukej\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

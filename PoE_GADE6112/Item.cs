@@ -12,6 +12,10 @@ namespace PoE_GADE6112
 
         }
 
+        public Item(int x, int y, TileType tileType) : base(x, y, tileType)
+        {
+        }
+
         public abstract override string ToString();
     }
 }

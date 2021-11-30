@@ -9,8 +9,8 @@ namespace PoE_GADE6112
     {
         private int damage;
         protected int Damage {get { return this.damage; } set { damage = value; } } //protected accessor for the Damage value
-        public virtual int Range();
-        
+        public virtual int Range { get; }
+
         private int durability;
         protected int Durability {get { return this.durability; } set { durability = value; } } //protected accessor for the Durability value
 

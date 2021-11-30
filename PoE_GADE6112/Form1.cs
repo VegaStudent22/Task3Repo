@@ -92,7 +92,12 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.Hero.Attack(enemy);
             }            
-        }        
+        }
+
+        private void Load_Click(object sender, EventArgs e)
+        {
+            gameEngine.Load();
+        }
     }
 }
 
