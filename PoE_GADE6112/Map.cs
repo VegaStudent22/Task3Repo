@@ -25,12 +25,12 @@ namespace PoE_GADE6112
         private Random random = new Random();
         public Random Random { get { return this.random; } set { random = value; } }
 
-        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int numberOfEnemies, int goldDrops)
+        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int numberOfEnemies, int goldDrops, int weaponDrops)
         {
             this.Width = this.Random.Next(minWidth, maxWidth);
             this.Height = this.Random.Next(minHeight, maxHeight);
             this.EnemyArr = new Enemy[numberOfEnemies];
-            this.ItemArr = new Item[goldDrops];
+            this.ItemArr = new Item[goldDrops + weaponDrops];
             this.Tile = new Tile[this.Width, this.Height];
             Console.WriteLine("=======\nwidth: "+ this.width + "\n========\nheight: "+ this.height);
             //call create
@@ -48,6 +48,11 @@ namespace PoE_GADE6112
             {
                 var gold = Create(TileType.GOLD);
                 UpdateTile(gold);
+            }
+            for (int i = 0; i < weaponDrops; i++)
+            {
+                var weapon = Create(TileType.WEAPON);
+                UpdateTile(weapon);
             }
             //call update Vision
             UpdateVision();
@@ -87,6 +92,25 @@ namespace PoE_GADE6112
                 case TileType.GOLD://as for question 3 task 2
                     Gold gold = new Gold(x, y);
                     return gold;
+                case TileType.WEAPON:
+                    int randomWeaponNumber = random.Next(0, 4);
+                    switch (randomWeaponNumber)
+                    {
+                        case 0:
+                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, 0, 0, TileType.WEAPON);
+                            break;
+                        case 1:
+                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.LONGSWORD, 0, 0, TileType.WEAPON);
+                            break;
+                        case 2:
+                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.RIFLE, 0, 0, TileType.WEAPON);
+                            break;
+                        case 3:
+                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.LONGBOW, 0, 0, TileType.WEAPON);
+                            break;
+                    }
+                    return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, 0, 0, TileType.WEAPON);
+                    break;
                 default:
                     return null;
             }            

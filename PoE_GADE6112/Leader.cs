@@ -11,7 +11,6 @@ namespace PoE_GADE6112
 
         protected Leader(int enemyXPosition, int enemyYPosition, TileType enemySymbol, int enemyDamage = 2, int enemyStartingHP = 20, int enemyMaxHP = 20) : base(enemyXPosition, enemyYPosition, enemyDamage, enemyStartingHP, enemyMaxHP, enemySymbol)
         {
-            enemyStartingHP = 20;
 
         }
 

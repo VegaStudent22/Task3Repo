@@ -13,12 +13,13 @@ namespace PoE_GADE6112
     {
         static string fileName;
         private Map map;
+        public Shop shop { get; set; }
         public Map Map { get { return this.map; } set { map = value; } }
         private static readonly string[] symbols = { "h", ".", "g", "o", "w", "$", "m" }; // $: GOLD
 
         public GameEngine()
         {
-            map = new Map(5, 10, 5, 10, 3, 5);
+            map = new Map(5, 10, 5, 10, 3, 5, 2);
             fileName = "game.dat";
         }
         public bool MovePlayer(Movement move)
@@ -62,14 +63,15 @@ namespace PoE_GADE6112
         {
             string grid = string.Empty;
             for (int i = 0; i < Map.Width; i++)
+
             {
-                grid += "X".PadRight(3);
+                grid += "X";
             }
             grid += "\n";
-            
+
             for (int i = 0; i < Map.Width; i++)
             {
-                grid += "X".PadRight(3);
+                grid += "X";
                 for (int j = 0; j < Map.Height; j++)
                 {
                     if (Map.Tile[i, j] != null)
@@ -77,44 +79,44 @@ namespace PoE_GADE6112
                         switch (Map.Tile[i, j].tileType)
                         {
                             case TileType.HERO:
-                                grid += symbols[0].PadRight(3);
+                                grid += symbols[0];
                                 break;
                             case TileType.EMPTY:
-                                grid += symbols[1].PadRight(3);
+                                grid += symbols[1];
                                 break;
                             case TileType.GOBLIN:
-                                grid += symbols[2].PadRight(3);
+                                grid += symbols[2];
                                 break;
                             case TileType.OBSTACLE:
-                                grid += symbols[3].PadRight(3);
+                                grid += symbols[3];
                                 break;
                             case TileType.WEAPON:
-                                grid += symbols[4].PadRight(3);
+                                grid += symbols[4];
                                 break;
                             case TileType.GOLD:
-                                grid += symbols[5].PadRight(3);
+                                grid += symbols[5];
                                 break;
                             case TileType.MAGE:
-                                grid += symbols[6].PadRight(3);
+                                grid += symbols[6];
                                 break;
                             default:
-                                grid += symbols[1].PadRight(3);
+                                grid += symbols[1];
                                 break;
                         }
                     }
                     else
                     {
-                        grid += symbols[1].PadRight(3);//empty if null
+                        grid += symbols[1];//empty if null
                     }
                     
                     //grid += " | " + Map.Tile[i, j];
                 }
-                grid += "X".PadLeft(3) + "\n";
+                grid += "X" + "\n";
             }
 
             for (int i = 0; i < Map.Width; i++)
             {
-                grid += "X".PadRight(3);
+                grid += "X";
             }
             grid += "\n";
             return grid;
