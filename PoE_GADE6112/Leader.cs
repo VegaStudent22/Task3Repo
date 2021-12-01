@@ -5,11 +5,11 @@ using System.Text;
 namespace PoE_GADE6112
 {
     [Serializable]
-    abstract class Leader : Enemy
+    public class Leader : Enemy
     {
         private Tile Target { get; set; }
 
-        protected Leader(int enemyXPosition, int enemyYPosition, TileType enemySymbol, int enemyDamage = 2, int enemyStartingHP = 20, int enemyMaxHP = 20) : base(enemyXPosition, enemyYPosition, enemyDamage, enemyStartingHP, enemyMaxHP, enemySymbol)
+        public  Leader(int enemyXPosition, int enemyYPosition, TileType enemySymbol, int enemyDamage = 2, int enemyStartingHP = 20, int enemyMaxHP = 20) : base(enemyXPosition, enemyYPosition, enemyDamage, enemyStartingHP, enemyMaxHP, enemySymbol)
         {
 
         }

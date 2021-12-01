@@ -79,7 +79,23 @@ namespace PoE_GADE6112
                     return hero;
                 case TileType.ENEMY:
                     //Integration Question 3 Task 2
-                    if(Random.Next(0,2) == 0)
+                    int enemyType = Random.Next(0, 3);
+                    switch(enemyType)
+                    {
+                        case 0:
+                            Goblin goblin = new Goblin(x, y);
+                            return goblin;
+                            break;
+                        case 1:
+                            Mage mage = new Mage(x, y);
+                            return mage;
+                            break;
+                        case 2:
+                            Leader leader = new Leader(x, y, TileType.ENEMY);
+                            return leader;
+                            break;
+                    }
+                    if (Random.Next(0,3) == 0)
                     {
                         Goblin goblin = new Goblin(x, y);
                         return goblin;
@@ -97,19 +113,19 @@ namespace PoE_GADE6112
                     switch (randomWeaponNumber)
                     {
                         case 0:
-                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, 0, 0, TileType.WEAPON);
+                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, x, y, TileType.WEAPON);
                             break;
                         case 1:
-                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.LONGSWORD, 0, 0, TileType.WEAPON);
+                            return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.LONGSWORD, x, y, TileType.WEAPON);
                             break;
                         case 2:
-                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.RIFLE, 0, 0, TileType.WEAPON);
+                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.RIFLE, x, y, TileType.WEAPON);
                             break;
                         case 3:
-                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.LONGBOW, 0, 0, TileType.WEAPON);
+                            return new RangedWeapon(RangedWeapon.RangedWeaponTypes.LONGBOW, x, y, TileType.WEAPON);
                             break;
                     }
-                    return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, 0, 0, TileType.WEAPON);
+                    return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, x, y, TileType.WEAPON);
                     break;
                 default:
                     return null;
