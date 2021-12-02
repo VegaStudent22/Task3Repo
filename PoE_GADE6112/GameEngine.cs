@@ -76,8 +76,19 @@ namespace PoE_GADE6112
                             case TileType.EMPTY:
                                 temp += symbols[1];
                                 break;
-                            case TileType.GOBLIN:
-                                temp += symbols[2];
+                            case TileType.ENEMY:
+                                if (Map.Tile[x, y].GetType() == typeof(Goblin))
+                                {
+                                    temp += "G";
+                                }
+                                else if (Map.Tile[x, y].GetType() == typeof(Mage))
+                                {
+                                    temp += "M";
+                                }
+                                else if (Map.Tile[x, y].GetType() == typeof(Leader))
+                                {
+                                    temp += "L";
+                                }
                                 break;
                             case TileType.OBSTACLE:
                                 temp += symbols[3];
@@ -180,12 +191,19 @@ namespace PoE_GADE6112
             }
         }
 
-        public void MoveEnemies(Character c) 
+        public void MoveEnemies() 
         {
             for (int i = 0; i < Map.EnemyArr.Length; i++)
             {   
-                Map.EnemyArr[i].Attack(c);
-                Map.UpdateVision();
+                //Map.EnemyArr[i].Attack(c);
+                //Map.UpdateVision();
+                if (map.EnemyArr[i].GetType() == typeof(Goblin))
+                {
+                    map.UpdateTile(new EmptyTile(map.EnemyArr[i].X, map.EnemyArr[i].Y));
+                    map.EnemyArr[i].Move(map.EnemyArr[i].ReturnMove());
+                    map.UpdateTile(map.EnemyArr[i]);
+                    map.UpdateVision();
+                }
             }
         }
         

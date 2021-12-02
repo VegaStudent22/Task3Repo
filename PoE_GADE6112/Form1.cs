@@ -34,6 +34,7 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();//re-draw form
@@ -47,6 +48,7 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
@@ -60,6 +62,7 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
@@ -73,6 +76,7 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
+                gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
                 UpdateForm();
