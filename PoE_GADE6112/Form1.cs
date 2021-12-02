@@ -32,6 +32,7 @@ namespace PoE_GADE6112
             var move = gameEngine.Map.Hero.ReturnMove(Movement.UP);//moves hero up
             if (move != Movement.NOMOVEMENT)
             {
+                gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -44,6 +45,7 @@ namespace PoE_GADE6112
             var move = gameEngine.Map.Hero.ReturnMove(Movement.DOWN);//moves hero down
             if (move != Movement.NOMOVEMENT)
             {
+                gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -56,6 +58,7 @@ namespace PoE_GADE6112
             var move = gameEngine.Map.Hero.ReturnMove(Movement.LEFT);//moves hero left
             if (move != Movement.NOMOVEMENT)
             {
+                gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -68,6 +71,7 @@ namespace PoE_GADE6112
             var move = gameEngine.Map.Hero.ReturnMove(Movement.RIGHT);//moves hero right
             if(move != Movement.NOMOVEMENT)
             {
+                gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
                 gameEngine.Map.Hero.Move(move);
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();

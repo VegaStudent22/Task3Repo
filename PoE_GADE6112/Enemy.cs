@@ -19,6 +19,15 @@ namespace PoE_GADE6112
             string EnemyClassName = this.GetType().Name;
 
             return EnemyClassName + " at [" + X + "," + Y + "] " + Damage;
+
+            if (weapon != null)
+            {
+                return "Equipped: " + EnemyClassName + " at [" + X + "," + Y + "] " + " with " + weapon.weaponType + "\n" + "(" + (weapon.durability * weapon.damage).ToString() + ")";
+            }
+            else
+            {
+                return "Bare Handed: " + EnemyClassName + " at [" + X + "," + Y + "] " + Damage;
+            }
         }
     }
 }

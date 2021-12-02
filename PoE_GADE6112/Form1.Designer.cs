@@ -30,10 +30,10 @@ namespace PoE_GADE6112
         private void InitializeComponent()
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Right = new System.Windows.Forms.Button();
+            this.Left = new System.Windows.Forms.Button();
             this.Up = new System.Windows.Forms.Button();
             this.Down = new System.Windows.Forms.Button();
-            this.Left = new System.Windows.Forms.Button();
-            this.Right = new System.Windows.Forms.Button();
             this.Attack = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,49 +53,49 @@ namespace PoE_GADE6112
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // Up
+            // Right
             // 
-            this.Up.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Up.Location = new System.Drawing.Point(880, 409);
-            this.Up.Name = "Up";
-            this.Up.Size = new System.Drawing.Size(46, 37);
-            this.Up.TabIndex = 1;
-            this.Up.Text = "^";
-            this.Up.UseVisualStyleBackColor = true;
-            this.Up.Click += new System.EventHandler(this.Up_Click);
-            // 
-            // Down
-            // 
-            this.Down.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Down.Location = new System.Drawing.Point(880, 516);
-            this.Down.Name = "Down";
-            this.Down.Size = new System.Drawing.Size(46, 37);
-            this.Down.TabIndex = 2;
-            this.Down.Text = "v";
-            this.Down.UseVisualStyleBackColor = true;
-            this.Down.Click += new System.EventHandler(this.Down_Click);
+            this.Right.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Right.Location = new System.Drawing.Point(959, 461);
+            this.Right.Name = "Right";
+            this.Right.Size = new System.Drawing.Size(46, 37);
+            this.Right.TabIndex = 1;
+            this.Right.Text = ">";
+            this.Right.UseVisualStyleBackColor = true;
+            this.Right.Click += new System.EventHandler(this.Up_Click);
             // 
             // Left
             // 
             this.Left.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Left.Location = new System.Drawing.Point(789, 461);
+            this.Left.Location = new System.Drawing.Point(798, 461);
             this.Left.Name = "Left";
             this.Left.Size = new System.Drawing.Size(46, 37);
-            this.Left.TabIndex = 3;
+            this.Left.TabIndex = 2;
             this.Left.Text = "<";
             this.Left.UseVisualStyleBackColor = true;
-            this.Left.Click += new System.EventHandler(this.Left_Click);
+            this.Left.Click += new System.EventHandler(this.Down_Click);
             // 
-            // Right
+            // Up
             // 
-            this.Right.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Right.Location = new System.Drawing.Point(963, 461);
-            this.Right.Name = "Right";
-            this.Right.Size = new System.Drawing.Size(46, 37);
-            this.Right.TabIndex = 4;
-            this.Right.Text = ">";
-            this.Right.UseVisualStyleBackColor = true;
-            this.Right.Click += new System.EventHandler(this.Right_Click);
+            this.Up.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Up.Location = new System.Drawing.Point(881, 407);
+            this.Up.Name = "Up";
+            this.Up.Size = new System.Drawing.Size(46, 37);
+            this.Up.TabIndex = 3;
+            this.Up.Text = "^";
+            this.Up.UseVisualStyleBackColor = true;
+            this.Up.Click += new System.EventHandler(this.Left_Click);
+            // 
+            // Down
+            // 
+            this.Down.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Down.Location = new System.Drawing.Point(881, 512);
+            this.Down.Name = "Down";
+            this.Down.Size = new System.Drawing.Size(46, 37);
+            this.Down.TabIndex = 4;
+            this.Down.Text = "v";
+            this.Down.UseVisualStyleBackColor = true;
+            this.Down.Click += new System.EventHandler(this.Right_Click);
             // 
             // Attack
             // 
@@ -150,7 +150,7 @@ namespace PoE_GADE6112
             // lblHeroStat
             // 
             this.lblHeroStat.AutoSize = true;
-            this.lblHeroStat.Location = new System.Drawing.Point(629, 429);
+            this.lblHeroStat.Location = new System.Drawing.Point(605, 22);
             this.lblHeroStat.Name = "lblHeroStat";
             this.lblHeroStat.Size = new System.Drawing.Size(76, 20);
             this.lblHeroStat.TabIndex = 18;
@@ -176,10 +176,10 @@ namespace PoE_GADE6112
             this.Controls.Add(this.lblHeroStat);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.Right);
-            this.Controls.Add(this.Left);
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Up);
+            this.Controls.Add(this.Left);
+            this.Controls.Add(this.Right);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -192,10 +192,10 @@ namespace PoE_GADE6112
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button Up;
-        private System.Windows.Forms.Button Down;
-        private new System.Windows.Forms.Button Left;
-        private new System.Windows.Forms.Button Right;
+        private System.Windows.Forms.Button Right;
+        private System.Windows.Forms.Button Left;
+        private new System.Windows.Forms.Button Up;
+        private new System.Windows.Forms.Button Down;
         private System.Windows.Forms.Button Attack;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Panel panel2;

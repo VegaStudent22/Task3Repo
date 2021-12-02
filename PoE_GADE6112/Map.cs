@@ -41,6 +41,7 @@ namespace PoE_GADE6112
             {
                 var enemy = Create(TileType.ENEMY);
                 UpdateTile(enemy);
+                enemyArr[i] = (Enemy)enemy;
             }
 
             //loop through items gold drop
@@ -48,11 +49,13 @@ namespace PoE_GADE6112
             {
                 var gold = Create(TileType.GOLD);
                 UpdateTile(gold);
+                itemArr[i] = (Item)gold;
             }
             for (int i = 0; i < weaponDrops; i++)
             {
                 var weapon = Create(TileType.WEAPON);
                 UpdateTile(weapon);
+                itemArr[i] = (Item)weapon;
             }
             //call update Vision
             UpdateVision();

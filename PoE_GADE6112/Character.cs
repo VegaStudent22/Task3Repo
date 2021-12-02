@@ -25,6 +25,8 @@ namespace PoE_GADE6112
        
         public int GoldPurse { get { return this.goldPurse; } set { goldPurse = value; } }
 
+        public Weapon weapon { get; set; }
+
         public Tile[] VisionArr { get; set; } = new Tile[4]; //index 0 up, 1 right, 2 down, 3 left; used to check valid movement
        
         public enum Movement
@@ -95,8 +97,17 @@ namespace PoE_GADE6112
         {
             if (i.tileType == TileType.GOLD)
             {
-                //goldPurse += i.GoldAmount
+                Gold gold = (Gold)i;
+                goldPurse += gold.GoldAmount;
             }
+            else if (i.tileType == TileType.WEAPON)
+            {
+                equip((Weapon)i);
+            }
+        }
+        private void equip(Weapon w)
+        {
+            weapon = w;
         }
     }
 }

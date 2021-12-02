@@ -9,7 +9,7 @@ namespace PoE_GADE6112
     {
         public Goblin(int x, int y) : base(x, y, 0, 10,1, TileType.ENEMY)
         {
-
+            weapon = new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER,0, 0, TileType.WEAPON);
         }
 
         public override Movement ReturnMove(Movement move = Movement.NOMOVEMENT)// to validate movement with character vision

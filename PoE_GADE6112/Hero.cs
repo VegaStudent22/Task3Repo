@@ -58,7 +58,17 @@ namespace PoE_GADE6112
 
         public override string ToString()
         {
-            string Hero = "Player Stats:" + "\n HP: " + HP + "/ " + MaxHP + "\n Gold: " + "\n " + goldAmount + "\n Damage: " + Damage + "\n [" + X + "," + Y + "]";
+            string weaponString;
+            if (weapon != null)
+            {
+                weaponString = weapon.weaponType;
+            }
+            else
+            {
+                weaponString = "Bare Hands";
+            }
+
+            string Hero = "Player Stats:" + "\n HP: " + HP + "/ " + MaxHP + "\n " + "Weapon: " + weaponString + "\n Gold: " +  goldAmount + "\n Damage: " + Damage + "\n [" + X + "," + Y + "]";
             return Hero;
         }
     }
