@@ -54,7 +54,7 @@ namespace PoE_GADE6112
                     {
                         if (VisionArr[1].tileType != TileType.OBSTACLE && VisionArr[1].tileType != TileType.ENEMY)
                         {
-                            return Movement.UP;
+                            return Movement.RIGHT;
                         }
                         else
                         {
@@ -70,7 +70,7 @@ namespace PoE_GADE6112
                     {
                         if (VisionArr[2].tileType != TileType.OBSTACLE && VisionArr[2].tileType != TileType.ENEMY)
                         {
-                            return Movement.UP;
+                            return Movement.DOWN;
                         }
                         else
                         {
@@ -86,7 +86,7 @@ namespace PoE_GADE6112
                     {
                         if (VisionArr[3].tileType != TileType.OBSTACLE && VisionArr[3].tileType != TileType.ENEMY)
                         {
-                            return Movement.UP;
+                            return Movement.LEFT;
                         }
                         else
                         {
