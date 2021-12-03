@@ -22,11 +22,11 @@ namespace PoE_GADE6112
 
             if (weapon != null)
             {
-                return "Equipped: " + EnemyClassName + " at [" + X + "," + Y + "] " + " with " + weapon.weaponType + "\n" + "(" + (weapon.durability * weapon.damage).ToString() + ")";
+                return "Equipped: " + EnemyClassName + " at [" + X + "," + Y + "] " + " with " + weapon.weaponType + "\n" + "(" + (weapon.durability * weapon.damage).ToString() + ")" + " With HP: " + HP.ToString();
             }
             else
             {
-                return "Bare Handed: " + EnemyClassName + " at [" + X + "," + Y + "] " + Damage;
+                return "Bare Handed: " + EnemyClassName + " at [" + X + "," + Y + "] " + Damage + " With HP: " + HP.ToString(); ;
             }
         }
     }

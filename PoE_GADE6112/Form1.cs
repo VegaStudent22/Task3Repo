@@ -115,6 +115,11 @@ namespace PoE_GADE6112
             {
                 gameEngine.Map.Hero.Attack(enemy);
                 UpdateForm();
+
+                if (enemy.IsDead())
+                {
+                    gameEngine.Map.UpdateTile(enemy);
+                }
             }            
         }
 

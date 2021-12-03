@@ -43,7 +43,7 @@ namespace PoE_GADE6112
         
         public virtual void Attack(Character target)
         {
-            this.HP = this.HP - target.Damage;
+            target.HP -= damage;
 
             if (target.IsDead())
             {
@@ -62,7 +62,7 @@ namespace PoE_GADE6112
 
         public virtual bool CheckRange(Character target)
         {            
-            if (DistanceTo(target) == 2) //Question 2.3 fix
+            if (DistanceTo(target) < 2) //Question 2.3 fix
             {
                 return true;
             }
