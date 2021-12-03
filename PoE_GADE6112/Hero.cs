@@ -27,11 +27,6 @@ namespace PoE_GADE6112
             switch (move)
             {
                 case Movement.UP:
-                    //if(VisionArr[0] == null)
-                    //{
-                    //    return move;
-                    //}
-                    //return VisionArr[0].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
                     if (VisionArr[0] != null)
                     {
                         if (VisionArr[0].tileType != TileType.OBSTACLE && VisionArr[0].tileType != TileType.ENEMY)

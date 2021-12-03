@@ -6,7 +6,6 @@ namespace PoE_GADE6112
 {
     public class Shop
     {
-        //public Weapon[] weaponArr { get { return this.weaponArr; } set { weaponArr = value; } }
         public Weapon[] weaponArr { get; set; }
         Random random = new Random();
         Character buyer;

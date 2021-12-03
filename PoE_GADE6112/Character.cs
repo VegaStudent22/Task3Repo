@@ -53,7 +53,7 @@ namespace PoE_GADE6112
 
         public bool IsDead()
         {
-            if (HP == 0)
+            if (HP <= 0)
             {
                 return true;
             }  

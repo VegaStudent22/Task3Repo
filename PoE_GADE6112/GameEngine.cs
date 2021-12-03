@@ -177,11 +177,9 @@ namespace PoE_GADE6112
             Map.Hero.Attack(e);
 
             if (e.IsDead())
-            {
-                //gameEngine.Map.UpdateTile(enemy);
+            {   
                 Map.Tile[e.X, e.Y] = new EmptyTile(e.X, e.Y);
                 Map.removeEnemy(e);
-                //gameEngine.Map.EnemyArr[selectedEnemy.]
                 return "You killed a " + e.tileType.ToString() + "\n";
             }
             else

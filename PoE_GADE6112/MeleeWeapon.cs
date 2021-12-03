@@ -35,7 +35,7 @@ namespace PoE_GADE6112
         }
 
         public override int Range => 1;
-        //(MeleeWeaponTypes meleeWeaponTypes == MeleeWeaponTypes.DAGGER)
+
 
         public override string ToString()
         {

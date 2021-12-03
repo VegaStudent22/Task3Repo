@@ -93,11 +93,9 @@ namespace PoE_GADE6112
         {
             int previousX = tile.X;
             int previousY = tile.Y;
-            //var previousTile = Tile[tile.X, tile.Y];
             Tile newEmpty = Create(TileType.EMPTY);
             newEmpty.X = previousX;
             newEmpty.Y = previousY;
-            //tile[x, y] = newEmpty;
             Tile[previousX, previousY] = newEmpty;
             Tile[tile.X, tile.Y] = tile;
         }
