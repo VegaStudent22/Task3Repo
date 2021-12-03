@@ -72,17 +72,17 @@ namespace PoE_GADE6112
             }
 
             //loop through items gold drop
-            for (int i = 0; i < goldDrops; i++)
+            for (int g = 0; g < goldDrops; g++)
             {
                 var gold = Create(TileType.GOLD);
                 UpdateTile(gold);
-                itemArr[i] = (Item)gold;
+                itemArr[g] = (Item)gold;
             }
-            for (int i = 0; i < weaponDrops; i++)
+            for (int w = goldDrops; w < ItemArr.Length; w++)
             {
                 var weapon = Create(TileType.WEAPON);
                 UpdateTile(weapon);
-                itemArr[i] = (Item)weapon;
+                itemArr[w] = (Item)weapon;
             }
             //call update Vision
             UpdateVision();
@@ -232,14 +232,19 @@ namespace PoE_GADE6112
         
         public Item GetItemAtPosition(int x, int y)
         {
-            var t = Tile[x, y];
+            //var t = Tile[x, y];
             for (int i = 0; i < ItemArr.Length; i++)
             {
-                if(ItemArr[i] == t)
+                //if(ItemArr[i] == t)
+                //{
+                //    var result = ItemArr[i];
+                //    ItemArr[i] = null;
+                //    return result;
+                //}
+
+                if (ItemArr[i].X == x && itemArr[i].Y == y)
                 {
-                    var result = ItemArr[i];
-                    ItemArr[i] = null;
-                    return result;
+                    return itemArr[i];
                 }
             }
             return null;

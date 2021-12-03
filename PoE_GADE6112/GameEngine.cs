@@ -25,6 +25,8 @@ namespace PoE_GADE6112
         }
         public bool MovePlayer(Movement move)
         {
+            map.Hero.Move(move);
+
             var isValid = false;
             //CheckRange movement against character vision array
             switch (move)

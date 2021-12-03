@@ -36,7 +36,8 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
-                gameEngine.Map.Hero.Move(move);
+                //gameEngine.Map.Hero.Move(move);
+                gameEngine.MovePlayer(move);
                 gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -50,7 +51,7 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
-                gameEngine.Map.Hero.Move(move);
+                gameEngine.MovePlayer(move);
                 gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -64,7 +65,7 @@ namespace PoE_GADE6112
             if (move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
-                gameEngine.Map.Hero.Move(move);
+                gameEngine.MovePlayer(move);
                 gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
@@ -78,7 +79,7 @@ namespace PoE_GADE6112
             if(move != Movement.NOMOVEMENT)
             {
                 gameEngine.Map.UpdateTile(new EmptyTile(gameEngine.Map.Hero.X, gameEngine.Map.Hero.Y));
-                gameEngine.Map.Hero.Move(move);
+                gameEngine.MovePlayer(move);
                 gameEngine.MoveEnemies();
                 gameEngine.Map.UpdateTile(gameEngine.Map.Hero);
                 gameEngine.Map.UpdateVision();
