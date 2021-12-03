@@ -7,7 +7,7 @@ namespace PoE_GADE6112
     [Serializable]
     public class Leader : Enemy
     {
-        private Tile Target { get; set; }
+        public Tile Target { get; set; }
 
         public Leader(int enemyXPosition, int enemyYPosition, TileType enemySymbol, int enemyDamage = 2, int enemyStartingHP = 20, int enemyMaxHP = 20) : base(enemyXPosition, enemyYPosition, enemyDamage, enemyStartingHP, enemyMaxHP, enemySymbol)
         {

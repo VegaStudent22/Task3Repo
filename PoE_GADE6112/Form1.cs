@@ -114,13 +114,16 @@ namespace PoE_GADE6112
             if (gameEngine.Map.Hero.CheckRange(enemy))
             {
                 gameEngine.Map.Hero.Attack(enemy);
-                UpdateForm();
 
                 if (enemy.IsDead())
                 {
-                    gameEngine.Map.UpdateTile(enemy);
+                    //gameEngine.Map.UpdateTile(enemy);
+                    gameEngine.Map.Tile[enemy.X, enemy.Y] = new EmptyTile(enemy.X, enemy.Y);
+                    //gameEngine.Map.EnemyArr[selectedEnemy.]
                 }
-            }            
+                UpdateForm();
+            }      
+            
         }
 
         private void Load_Click(object sender, EventArgs e)

@@ -118,65 +118,6 @@ namespace PoE_GADE6112
                 temp += "\n";
             }
             return temp;
-            //string grid = string.Empty;
-            //for (int i = 0; i < Map.Width; i++)
-
-            //{
-            //    grid += "X";
-            //}
-            //grid += "\n";
-
-            //for (int i = 0; i < Map.Width; i++)
-            //{
-            //    grid += "X";
-            //    for (int j = 0; j < Map.Height; j++)
-            //    {
-            //        if (Map.Tile[i, j] != null)
-            //        {                        
-            //            switch (Map.Tile[i, j].tileType)
-            //            {
-            //                case TileType.HERO:
-            //                    grid += symbols[0];
-            //                    break;
-            //                case TileType.EMPTY:
-            //                    grid += symbols[1];
-            //                    break;
-            //                case TileType.GOBLIN:
-            //                    grid += symbols[2];
-            //                    break;
-            //                case TileType.OBSTACLE:
-            //                    grid += symbols[3];
-            //                    break;
-            //                case TileType.WEAPON:
-            //                    grid += symbols[4];
-            //                    break;
-            //                case TileType.GOLD:
-            //                    grid += symbols[5];
-            //                    break;
-            //                case TileType.MAGE:
-            //                    grid += symbols[6];
-            //                    break;
-            //                default:
-            //                    grid += symbols[1];
-            //                    break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            grid += symbols[1];//empty if null
-            //        }
-                    
-            //        //grid += " | " + Map.Tile[i, j];
-            //    }
-            //    grid += "X" + "\n";
-            //}
-
-            //for (int i = 0; i < Map.Width; i++)
-            //{
-            //    grid += "X";
-            //}
-            //grid += "\n";
-            //return grid;
         }
 
         public void EnemyAttacks(Character c, Enemy g) //g: Goblin
@@ -200,7 +141,7 @@ namespace PoE_GADE6112
             {   
                 //Map.EnemyArr[i].Attack(c);
                 //Map.UpdateVision();
-                if (map.EnemyArr[i].GetType() == typeof(Goblin))
+                if (map.EnemyArr[i].GetType() == typeof(Goblin) || map.EnemyArr[i].GetType() == typeof(Leader))
                 {
                     map.UpdateTile(new EmptyTile(map.EnemyArr[i].X, map.EnemyArr[i].Y));
                     map.EnemyArr[i].Move(map.EnemyArr[i].ReturnMove());

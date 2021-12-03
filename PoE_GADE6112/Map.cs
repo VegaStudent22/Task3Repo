@@ -132,6 +132,7 @@ namespace PoE_GADE6112
                             break;
                         case 2:
                             Leader leader = new Leader(x, y, TileType.ENEMY);
+                            leader.Target = Hero;
                             return leader;
                             break;
                     }
