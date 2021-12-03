@@ -289,5 +289,29 @@ namespace PoE_GADE6112
             }
             return null;
         }
+
+        public void removeEnemy(Enemy e)
+        {
+            for (int i = 0; i < enemyArr.Length; i++)
+            {
+                if (enemyArr[i] == e)
+                {
+                    enemyArr[i] = null;
+                }
+            }
+            Enemy[] tempEnemyArr = new Enemy[enemyArr.Length - 1];
+            int tempIndex = 0;
+
+            for (int j = 0; j < enemyArr.Length; j++)
+            {
+                if (enemyArr[j] != null)
+                {
+                    tempEnemyArr[tempIndex] = enemyArr[j];
+
+                    tempIndex++;
+                }
+            }
+            enemyArr = tempEnemyArr;
+        }
     }
 }

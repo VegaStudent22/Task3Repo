@@ -38,7 +38,7 @@ namespace PoE_GADE6112
                 enemyDropdown.Items.Add(gameEngine.Map.EnemyArr[e].ToString());
             }
 
-            enemyDropdown.SelectedIndex = selectedEnemy;
+            enemyDropdown.SelectedIndex = 0;
 
             richTextBox3.Text = gameEngine.Map.EnemyArr[selectedEnemy].ToString();
         }
