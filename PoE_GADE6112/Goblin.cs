@@ -24,10 +24,6 @@ namespace PoE_GADE6112
                 movement = randomNumber.Next(1, 4);
             }
 
-            while (VisionArr[movement] != null)
-            {
-                movement = randomNumber.Next(1, 4);
-            }
             if (movement == 1)
             {
                return Movement.UP;

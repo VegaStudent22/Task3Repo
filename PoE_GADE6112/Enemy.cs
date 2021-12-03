@@ -18,7 +18,7 @@ namespace PoE_GADE6112
         {
             string EnemyClassName = this.GetType().Name;
 
-            return EnemyClassName + " at [" + X + "," + Y + "] " + Damage;
+            //return EnemyClassName + " at [" + X + "," + Y + "] " + Damage;
 
             if (weapon != null)
             {

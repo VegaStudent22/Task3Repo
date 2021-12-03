@@ -37,6 +37,7 @@ namespace PoE_GADE6112
             this.Attack = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.enemyDropdown = new System.Windows.Forms.ComboBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.Save = new System.Windows.Forms.Button();
             this.lblHeroStat = new System.Windows.Forms.Label();
@@ -122,6 +123,7 @@ namespace PoE_GADE6112
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.enemyDropdown);
             this.panel2.Controls.Add(this.richTextBox3);
             this.panel2.Controls.Add(this.richTextBox2);
             this.panel2.Controls.Add(this.Attack);
@@ -130,12 +132,21 @@ namespace PoE_GADE6112
             this.panel2.Size = new System.Drawing.Size(331, 379);
             this.panel2.TabIndex = 11;
             // 
+            // enemyDropdown
+            // 
+            this.enemyDropdown.FormattingEnabled = true;
+            this.enemyDropdown.Location = new System.Drawing.Point(15, 12);
+            this.enemyDropdown.Name = "enemyDropdown";
+            this.enemyDropdown.Size = new System.Drawing.Size(303, 28);
+            this.enemyDropdown.TabIndex = 23;
+            this.enemyDropdown.SelectedIndexChanged += new System.EventHandler(this.enemyDropdown_SelectedIndexChanged);
+            // 
             // richTextBox3
             // 
             this.richTextBox3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox3.Location = new System.Drawing.Point(15, 11);
+            this.richTextBox3.Location = new System.Drawing.Point(15, 67);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(303, 185);
+            this.richTextBox3.Size = new System.Drawing.Size(303, 129);
             this.richTextBox3.TabIndex = 12;
             this.richTextBox3.Text = "";
             // 
@@ -153,7 +164,7 @@ namespace PoE_GADE6112
             // lblHeroStat
             // 
             this.lblHeroStat.AutoSize = true;
-            this.lblHeroStat.Location = new System.Drawing.Point(605, 22);
+            this.lblHeroStat.Location = new System.Drawing.Point(587, 22);
             this.lblHeroStat.Name = "lblHeroStat";
             this.lblHeroStat.Size = new System.Drawing.Size(76, 20);
             this.lblHeroStat.TabIndex = 18;
@@ -242,6 +253,7 @@ namespace PoE_GADE6112
         private System.Windows.Forms.Button shopItemOne;
         private System.Windows.Forms.Button shopItemTwo;
         private System.Windows.Forms.Button shopItemThree;
+        private System.Windows.Forms.ComboBox enemyDropdown;
     }
 }
 

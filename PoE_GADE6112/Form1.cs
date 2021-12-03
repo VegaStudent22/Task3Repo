@@ -11,9 +11,11 @@ using static PoE_GADE6112.Character;
 
 namespace PoE_GADE6112
 {
+    
     public partial class Form1 : Form
     {
         GameEngine gameEngine;
+        int selectedEnemy = 0;
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +30,17 @@ namespace PoE_GADE6112
         {
             richTextBox1.Text = gameEngine.ToString();
             lblHeroStat.Text = gameEngine.Map.Hero.ToString();
+
+            enemyDropdown.Items.Clear();
+
+            for (int e = 0; e < gameEngine.Map.EnemyArr.Length; e++)
+            {
+                enemyDropdown.Items.Add(gameEngine.Map.EnemyArr[e].ToString());
+            }
+
+            enemyDropdown.SelectedIndex = selectedEnemy;
+
+            richTextBox3.Text = gameEngine.Map.EnemyArr[selectedEnemy].ToString();
         }
 
         private void Up_Click(object sender, EventArgs e)
@@ -97,12 +110,11 @@ namespace PoE_GADE6112
         {
             //visionArr index 0 up, 1 right, 2 down, 3 left
             //gameEngine.Map.Hero.VisionArr[3];
-            var x = gameEngine.Map.Hero.X;
-            var y = gameEngine.Map.Hero.Y;
-            var enemy = gameEngine.Map.EnemyArr[0];//to fix
+            var enemy = gameEngine.Map.EnemyArr[selectedEnemy];//to fix
             if (gameEngine.Map.Hero.CheckRange(enemy))
             {
                 gameEngine.Map.Hero.Attack(enemy);
+                UpdateForm();
             }            
         }
 
@@ -126,6 +138,15 @@ namespace PoE_GADE6112
         private void shopItemThree_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void enemyDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedEnemy = enemyDropdown.SelectedIndex;
+
+            //enemyDropdown.SelectedIndex = selectedEnemy;
+
+            richTextBox3.Text = gameEngine.Map.EnemyArr[selectedEnemy].ToString();
         }
     }
 }
