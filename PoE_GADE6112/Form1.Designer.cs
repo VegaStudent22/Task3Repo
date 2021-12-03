@@ -41,6 +41,9 @@ namespace PoE_GADE6112
             this.Save = new System.Windows.Forms.Button();
             this.lblHeroStat = new System.Windows.Forms.Label();
             this.Load = new System.Windows.Forms.Button();
+            this.shopItemOne = new System.Windows.Forms.Button();
+            this.shopItemTwo = new System.Windows.Forms.Button();
+            this.shopItemThree = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,11 +170,44 @@ namespace PoE_GADE6112
             this.Load.UseVisualStyleBackColor = true;
             this.Load.Click += new System.EventHandler(this.Load_Click);
             // 
+            // shopItemOne
+            // 
+            this.shopItemOne.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.shopItemOne.Location = new System.Drawing.Point(573, 246);
+            this.shopItemOne.Name = "shopItemOne";
+            this.shopItemOne.Size = new System.Drawing.Size(144, 31);
+            this.shopItemOne.TabIndex = 20;
+            this.shopItemOne.UseVisualStyleBackColor = true;
+            this.shopItemOne.Click += new System.EventHandler(this.shopItemOne_Click);
+            // 
+            // shopItemTwo
+            // 
+            this.shopItemTwo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.shopItemTwo.Location = new System.Drawing.Point(573, 359);
+            this.shopItemTwo.Name = "shopItemTwo";
+            this.shopItemTwo.Size = new System.Drawing.Size(144, 31);
+            this.shopItemTwo.TabIndex = 21;
+            this.shopItemTwo.UseVisualStyleBackColor = true;
+            this.shopItemTwo.Click += new System.EventHandler(this.shopItemTwo_Click);
+            // 
+            // shopItemThree
+            // 
+            this.shopItemThree.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.shopItemThree.Location = new System.Drawing.Point(573, 467);
+            this.shopItemThree.Name = "shopItemThree";
+            this.shopItemThree.Size = new System.Drawing.Size(144, 31);
+            this.shopItemThree.TabIndex = 22;
+            this.shopItemThree.UseVisualStyleBackColor = true;
+            this.shopItemThree.Click += new System.EventHandler(this.shopItemThree_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1088, 724);
+            this.Controls.Add(this.shopItemThree);
+            this.Controls.Add(this.shopItemTwo);
+            this.Controls.Add(this.shopItemOne);
             this.Controls.Add(this.Load);
             this.Controls.Add(this.lblHeroStat);
             this.Controls.Add(this.Save);
@@ -203,6 +239,9 @@ namespace PoE_GADE6112
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label lblHeroStat;
         private System.Windows.Forms.Button Load;
+        private System.Windows.Forms.Button shopItemOne;
+        private System.Windows.Forms.Button shopItemTwo;
+        private System.Windows.Forms.Button shopItemThree;
     }
 }
 

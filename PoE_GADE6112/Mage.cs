@@ -9,7 +9,7 @@ namespace PoE_GADE6112
     {
         public Mage(int x, int y): base(x,y,5,5,10,TileType.ENEMY)
         {
-
+            GoldPurse = 3;
         }
         public override Movement ReturnMove(Movement move = Movement.NOMOVEMENT)
         {

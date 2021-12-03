@@ -21,6 +21,7 @@ namespace PoE_GADE6112
         {
             map = new Map(10, 10, 20, 20, 3, 5, 5);
             fileName = "game.dat";
+            shop = new Shop(map.Hero);
         }
         public bool MovePlayer(Movement move)
         {

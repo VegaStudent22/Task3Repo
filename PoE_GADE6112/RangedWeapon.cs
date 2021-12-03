@@ -18,7 +18,7 @@ namespace PoE_GADE6112
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            return weaponType.ToString();
         }
 
         public RangedWeapon(RangedWeaponTypes rangedTypes, int x, int y, TileType tyleRanged) : base(x, y)

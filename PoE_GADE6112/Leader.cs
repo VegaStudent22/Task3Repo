@@ -12,6 +12,7 @@ namespace PoE_GADE6112
         public Leader(int enemyXPosition, int enemyYPosition, TileType enemySymbol, int enemyDamage = 2, int enemyStartingHP = 20, int enemyMaxHP = 20) : base(enemyXPosition, enemyYPosition, enemyDamage, enemyStartingHP, enemyMaxHP, enemySymbol)
         {
             weapon = new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.LONGSWORD, 0, 0, TileType.WEAPON);
+            GoldPurse = 2;
         }
 
         public override Movement ReturnMove(Movement moveDirection = Movement.NOMOVEMENT)

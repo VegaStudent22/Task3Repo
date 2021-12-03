@@ -13,7 +13,7 @@ namespace PoE_GADE6112
         public new int maxHP;
         public int goldAmount;
 
-        public Hero(int heroXPosition, int heroYPosition, int heroHP, int maxHP, int goldAmount) : base(heroXPosition, heroYPosition, TileType.HERO, 2, heroHP, maxHP)
+        public Hero(int heroXPosition, int heroYPosition, int heroHP, int maxHP, int goldAmount = 0) : base(heroXPosition, heroYPosition, TileType.HERO, 2, heroHP, maxHP)
         {
             this.heroXPosition = heroXPosition;
             this.heroYPosition = heroYPosition;

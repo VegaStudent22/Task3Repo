@@ -44,6 +44,11 @@ namespace PoE_GADE6112
         public virtual void Attack(Character target)
         {
             this.HP = this.HP - target.Damage;
+
+            if (target.IsDead())
+            {
+                loot(target);
+            }
         }
 
         public bool IsDead()
@@ -108,6 +113,19 @@ namespace PoE_GADE6112
         private void equip(Weapon w)
         {
             weapon = w;
+        }
+
+        void loot(Character enemyKilled)
+        {
+            goldPurse += enemyKilled.GoldPurse;
+            if (weapon == null)
+            {
+                weapon = enemyKilled.weapon;
+                if (GetType() != typeof(Mage))
+                {
+                    weapon = enemyKilled.weapon;
+                }
+            }
         }
     }
 }

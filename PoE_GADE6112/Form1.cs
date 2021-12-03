@@ -18,6 +18,9 @@ namespace PoE_GADE6112
         {
             InitializeComponent();
             gameEngine = new GameEngine();
+            shopItemOne.Text = gameEngine.shop.weaponArr[0].ToString();
+            shopItemTwo.Text = gameEngine.shop.weaponArr[1].ToString();
+            shopItemThree.Text = gameEngine.shop.weaponArr[2].ToString();
             UpdateForm();
         }
 
@@ -105,6 +108,21 @@ namespace PoE_GADE6112
         private void Load_Click(object sender, EventArgs e)
         {
             gameEngine.Load();
+        }
+
+        private void shopItemOne_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void shopItemTwo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void shopItemThree_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
