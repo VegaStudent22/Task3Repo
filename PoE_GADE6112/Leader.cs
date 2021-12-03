@@ -32,11 +32,11 @@ namespace PoE_GADE6112
             {
                 if (y < Target.Y)
                 {
-                    return isValid(Movement.DOWN);
+                    return isValid(Movement.UP);
                 }
                 else
                 {
-                    return isValid(Movement.UP);
+                    return isValid(Movement.DOWN);
                 }
             }
             return Movement.NOMOVEMENT;

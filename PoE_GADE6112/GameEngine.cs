@@ -171,6 +171,23 @@ namespace PoE_GADE6112
             fs.Close();
             fs.Dispose();
         }
+        
+        public string playerAttack(Enemy e)
+        {
+            Map.Hero.Attack(e);
+
+            if (e.IsDead())
+            {
+                //gameEngine.Map.UpdateTile(enemy);
+                Map.Tile[e.X, e.Y] = new EmptyTile(e.X, e.Y);
+                //gameEngine.Map.EnemyArr[selectedEnemy.]
+                return "You killed a " + e.tileType.ToString() + "\n";
+            }
+            else
+            {
+                return "You attacked a " + e.tileType.ToString() + " for " + map.Hero.Damage + "\n"; 
+            }
+        }
     }
 }
 

@@ -113,14 +113,7 @@ namespace PoE_GADE6112
             var enemy = gameEngine.Map.EnemyArr[selectedEnemy];//to fix
             if (gameEngine.Map.Hero.CheckRange(enemy))
             {
-                gameEngine.Map.Hero.Attack(enemy);
-
-                if (enemy.IsDead())
-                {
-                    //gameEngine.Map.UpdateTile(enemy);
-                    gameEngine.Map.Tile[enemy.X, enemy.Y] = new EmptyTile(enemy.X, enemy.Y);
-                    //gameEngine.Map.EnemyArr[selectedEnemy.]
-                }
+                richTextBox2.Text += gameEngine.playerAttack(enemy);
                 UpdateForm();
             }      
             
