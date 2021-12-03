@@ -11,7 +11,6 @@ namespace PoE_GADE6112
         public int heroYPosition;
         public int heroHP;
         public new int maxHP;
-        public int goldAmount;
 
         public Hero(int heroXPosition, int heroYPosition, int heroHP, int maxHP, int goldAmount = 0) : base(heroXPosition, heroYPosition, TileType.HERO, 2, heroHP, maxHP)
         {
@@ -19,7 +18,7 @@ namespace PoE_GADE6112
             this.heroYPosition = heroYPosition;
             this.heroHP = heroHP;
             this.maxHP = maxHP;
-            this.goldAmount = goldAmount;
+            GoldPurse = goldAmount;
         }
 
         public override Movement ReturnMove(Movement move)
@@ -114,7 +113,7 @@ namespace PoE_GADE6112
                 weaponString = "Bare Hands";
             }
 
-            string Hero = "Player Stats:" + "\n HP: " + HP + "/ " + MaxHP + "\n " + "Weapon: " + weaponString + "\n Gold: " +  goldAmount + "\n Damage: " + Damage + "\n [" + X + "," + Y + "]";
+            string Hero = "Player Stats:" + "\n HP: " + HP + "/ " + MaxHP + "\n " + "Weapon: " + weaponString + "\n Gold: " +  GoldPurse + "\n Damage: " + Damage + "\n [" + X + "," + Y + "]";
             return Hero;
         }
     }

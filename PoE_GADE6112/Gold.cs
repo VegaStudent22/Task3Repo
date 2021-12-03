@@ -14,6 +14,7 @@ namespace PoE_GADE6112
         public Gold(int x, int y): base(x,y)
         {
             GoldAmount = Random.Next(1,6);
+            tileType = TileType.GOLD;
         }
 
         public Random Random { get { return this.random; } set { random = value; } }
