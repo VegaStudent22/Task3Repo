@@ -36,6 +36,21 @@ namespace PoE_GADE6112
             //call create
             var h = Create(TileType.HERO);
             UpdateTile(h);
+
+            for (int x = 0; x < Width; x++)
+            {
+                for (int y = 0; y < Height; y++)
+                {
+                    if (x == 0 || x == Width - 1 || y == 0 || y == Height - 1)
+                    {
+                        Tile newObstacle = Create(TileType.OBSTACLE);
+                        newObstacle.X = x;
+                        newObstacle.Y = y;
+                        tile[x, y] = newObstacle;
+                    }
+                }    
+            }
+
             //loop through enemies
             for (int i=0; i< numberOfEnemies; i++)
             {
@@ -74,6 +89,11 @@ namespace PoE_GADE6112
         {
             int x = this.Random.Next(0, Width);
             int y = this.Random.Next(0, Height);
+            while (tile[x, y] != null)
+            {
+                x = this.Random.Next(0, Width);
+                y = this.Random.Next(0, Height);
+            }
             Console.WriteLine("=======\nH.X: " + x + "\n========\nH.Y: " + y);
             switch (tileType)
             {
@@ -129,6 +149,9 @@ namespace PoE_GADE6112
                             break;
                     }
                     return new MeleeWeapon(MeleeWeapon.MeleeWeaponTypes.DAGGER, x, y, TileType.WEAPON);
+                    break;
+                case TileType.OBSTACLE:
+                    return new Obstacle(x, y);
                     break;
                 default:
                     return null;
