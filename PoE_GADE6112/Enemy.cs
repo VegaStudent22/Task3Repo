@@ -16,7 +16,7 @@ namespace PoE_GADE6112
         }
         public override string ToString()
         {
-            string EnemyClassName = this.GetType().Name
+            string EnemyClassName = this.GetType().Name;
 
             if (weapon != null)
             {
