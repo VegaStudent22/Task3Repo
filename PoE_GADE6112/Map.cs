@@ -33,10 +33,22 @@ namespace PoE_GADE6112
             this.ItemArr = new Item[goldDrops + weaponDrops];
             this.Tile = new Tile[this.Width, this.Height];
             Console.WriteLine("=======\nwidth: "+ this.width + "\n========\nheight: "+ this.height);
+
+            //Spawning empty tiles
+            for (int x = 0; x < Width; x++)
+            {
+                for (int y = 0; y < Height; y++)
+                {
+                    Tile newEmpty = new EmptyTile(x, y);
+                    tile[x, y] = newEmpty;
+                }
+            }
+
             //call create
             var h = Create(TileType.HERO);
             UpdateTile(h);
 
+            //spawning barriers
             for (int x = 0; x < Width; x++)
             {
                 for (int y = 0; y < Height; y++)
@@ -81,7 +93,11 @@ namespace PoE_GADE6112
             int previousX = tile.X;
             int previousY = tile.Y;
             //var previousTile = Tile[tile.X, tile.Y];
-            Tile[previousX, previousY] = null;
+            Tile newEmpty = Create(TileType.EMPTY);
+            newEmpty.X = previousX;
+            newEmpty.Y = previousY;
+            //tile[x, y] = newEmpty;
+            Tile[previousX, previousY] = newEmpty;
             Tile[tile.X, tile.Y] = tile;
         }
 
@@ -89,7 +105,7 @@ namespace PoE_GADE6112
         {
             int x = this.Random.Next(0, Width);
             int y = this.Random.Next(0, Height);
-            while (tile[x, y] != null)
+            while (tile[x, y].tileType != TileType.EMPTY)
             {
                 x = this.Random.Next(0, Width);
                 y = this.Random.Next(0, Height);
@@ -153,6 +169,9 @@ namespace PoE_GADE6112
                 case TileType.OBSTACLE:
                     return new Obstacle(x, y);
                     break;
+                case TileType.EMPTY:
+                    return new EmptyTile(x, y);
+                    break;
                 default:
                     return null;
             }            
@@ -179,21 +198,36 @@ namespace PoE_GADE6112
             {
                 Hero.VisionArr[0] = Tile[x, y + 1];//up
             }
-
+            else
+            {
+                Hero.VisionArr[0] = null;
+            }
             if(x < width - 1)
             {
                 Hero.VisionArr[1] = Tile[x + 1, y];//right
-            }                
-            
+            }
+            else
+            {
+                Hero.VisionArr[1] = null;
+            }
+
             if (y > 1)
             {
                 Hero.VisionArr[2] = Tile[x, y - 1];//down
+            }
+            else
+            {
+                Hero.VisionArr[2] = null;
             }
 
             if (x > 1)
             {
                 Hero.VisionArr[3] = Tile[x - 1, y];//left
-            }            
+            }
+            else
+            {
+                Hero.VisionArr[3] = null;
+            }
         }
         
         public Item GetItemAtPosition(int x, int y)

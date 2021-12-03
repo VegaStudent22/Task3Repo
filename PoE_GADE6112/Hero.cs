@@ -28,29 +28,75 @@ namespace PoE_GADE6112
             switch (move)
             {
                 case Movement.UP:
-                    if(VisionArr[0] == null)
+                    //if(VisionArr[0] == null)
+                    //{
+                    //    return move;
+                    //}
+                    //return VisionArr[0].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
+                    if (VisionArr[0] != null)
                     {
-                        return move;
+                        if (VisionArr[0].tileType != TileType.OBSTACLE && VisionArr[0].tileType != TileType.ENEMY)
+                        {
+                            return Movement.UP;
+                        }
+                        else
+                        {
+                            return Movement.NOMOVEMENT;
+                        }
                     }
-                    return VisionArr[0].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
+                    else
+                    {
+                        return Movement.NOMOVEMENT;
+                    }
+                    
                 case Movement.RIGHT:
-                    if (VisionArr[1] == null)
+                    if (VisionArr[1] != null)
                     {
-                        return move;
+                        if (VisionArr[1].tileType != TileType.OBSTACLE && VisionArr[1].tileType != TileType.ENEMY)
+                        {
+                            return Movement.UP;
+                        }
+                        else
+                        {
+                            return Movement.NOMOVEMENT;
+                        }
                     }
-                    return VisionArr[1].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
+                    else
+                    {
+                        return Movement.NOMOVEMENT;
+                    }
                 case Movement.DOWN:
-                    if (VisionArr[2] == null)
+                    if (VisionArr[2] != null)
                     {
-                        return move;
+                        if (VisionArr[2].tileType != TileType.OBSTACLE && VisionArr[2].tileType != TileType.ENEMY)
+                        {
+                            return Movement.UP;
+                        }
+                        else
+                        {
+                            return Movement.NOMOVEMENT;
+                        }
                     }
-                    return VisionArr[2].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
+                    else
+                    {
+                        return Movement.NOMOVEMENT;
+                    }
                 case Movement.LEFT:
-                    if (VisionArr[3] == null)
+                    if (VisionArr[3] != null)
                     {
-                        return move;
+                        if (VisionArr[3].tileType != TileType.OBSTACLE && VisionArr[3].tileType != TileType.ENEMY)
+                        {
+                            return Movement.UP;
+                        }
+                        else
+                        {
+                            return Movement.NOMOVEMENT;
+                        }
                     }
-                    return VisionArr[3].tileType != TileType.OBSTACLE ? move : Movement.NOMOVEMENT;
+                    else
+                    {
+                        return Movement.NOMOVEMENT;
+                    }
                 default:
                     return Movement.NOMOVEMENT;
             }
