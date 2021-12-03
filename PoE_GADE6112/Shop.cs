@@ -54,9 +54,12 @@ namespace PoE_GADE6112
         
         public void Buy(int num)
         {
-            buyer.GoldPurse -= weaponArr[num].cost;
-            buyer.Pickup(weaponArr[num]);
-            weaponArr[num] = randomWeapon();
+            if (canBuy(num))
+            {
+                buyer.GoldPurse -= weaponArr[num].cost;
+                buyer.Pickup(weaponArr[num]);
+                weaponArr[num] = randomWeapon();
+            }
         }
 
         public string DisplayWeapon(int num)

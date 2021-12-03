@@ -44,9 +44,6 @@ namespace PoE_GADE6112
                 }
             }
 
-            //call create
-            var h = Create(TileType.HERO);
-            UpdateTile(h);
 
             //spawning barriers
             for (int x = 0; x < Width; x++)
@@ -62,6 +59,10 @@ namespace PoE_GADE6112
                     }
                 }    
             }
+
+            //call create
+            var h = Create(TileType.HERO);
+            UpdateTile(h);
 
             //loop through enemies
             for (int i=0; i< numberOfEnemies; i++)
@@ -227,6 +228,44 @@ namespace PoE_GADE6112
             else
             {
                 Hero.VisionArr[3] = null;
+            }
+
+            for (int e = 0; e < enemyArr.Length; e++)
+            {
+                if (enemyArr[e].Y < height - 1)
+                {
+                    enemyArr[e].VisionArr[0] = Tile[enemyArr[e].X, enemyArr[e].Y + 1];//up
+                }
+                else
+                {
+                    enemyArr[e].VisionArr[0] = new Obstacle(0,0);
+                }
+                if (enemyArr[e].X < width - 1)
+                {
+                    enemyArr[e].VisionArr[1] = Tile[enemyArr[e].X + 1, enemyArr[e].Y];//right
+                }
+                else
+                {
+                    enemyArr[e].VisionArr[1] = new Obstacle(0, 0);
+                }
+
+                if (enemyArr[e].Y > 1)
+                {
+                    enemyArr[e].VisionArr[2] = Tile[enemyArr[e].X, enemyArr[e].Y - 1];//down
+                }
+                else
+                {
+                    enemyArr[e].VisionArr[2] = new Obstacle(0, 0);
+                }
+
+                if (enemyArr[e].X > 1)
+                {
+                    enemyArr[e].VisionArr[3] = Tile[enemyArr[e].X - 1, enemyArr[e].Y];//left
+                }
+                else
+                {
+                    enemyArr[e].VisionArr[3] = new Obstacle(0, 0);
+                }
             }
         }
         

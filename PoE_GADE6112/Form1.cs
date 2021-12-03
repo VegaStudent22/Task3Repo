@@ -113,7 +113,9 @@ namespace PoE_GADE6112
 
         private void shopItemOne_Click(object sender, EventArgs e)
         {
-
+            gameEngine.shop.Buy(0);
+            shopItemOne.Text = gameEngine.shop.weaponArr[0].ToString();
+            lblHeroStat.Text = gameEngine.Map.Hero.ToString();
         }
 
         private void shopItemTwo_Click(object sender, EventArgs e)

@@ -16,6 +16,14 @@ namespace PoE_GADE6112
         public override Movement ReturnMove(Movement move = Movement.NOMOVEMENT)// to validate movement with character vision
         {
             int movement = randomNumber.Next(1,4);
+
+
+
+            while (VisionArr[movement].tileType != TileType.EMPTY)
+            {
+                movement = randomNumber.Next(1, 4);
+            }
+
             while (VisionArr[movement] != null)
             {
                 movement = randomNumber.Next(1, 4);
